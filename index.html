@@ -19,7 +19,7 @@
         <p> Hi, My name is Isabel and welcome to my page! </p>
         
         <!-- Example 1: Add a paragraph. Then within it, add a span with an id of "liked-item". Put something you like within the span. -->
-        <p id = "liked-item"> I really like <spam style= "color:blue" id="liked item">food</span> </p>
+        <p id = "liked-item"> I really like <span style= "color:blue" id="liked item">food</span> </p>
         <!-- Challenge 1: Add a button with an id of "cool-button" -->
         <button id = "cool-button"> WARNING Don't Press This Button </button> <!-- does not do anything yet need javascript->
         <!-- Challenge 2: Add a paragraph. Inside that paragraph, add a span with an id of "grow-text" -->
@@ -30,7 +30,7 @@
             var itemsLiked = ["rap", "nothing", "coding", "dogs"];
             var index = 0;
             setInterval(function() {
-                var header = document.getElementById("liked-item);
+                var header = document.getElementById("liked-item");
                 index = (index + 1) % itemsLiked.length;
                 header.innerHTML= itemsLiked[index];
                 
